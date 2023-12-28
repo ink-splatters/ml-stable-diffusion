@@ -15,12 +15,13 @@ setup(
     author='Apple Inc.',
     install_requires=[
         "coremltools>=7.0b2",
+        "python<3.12", # python imp is deprecated and removed in 3.12
         "diffusers[torch]",
         "torch",
         "transformers>=4.30.0",
         "huggingface-hub",
         "scipy",
-        "numpy<1.24",
+        "numpy",
         "pytest",
         "scikit-learn",
         "invisible-watermark",
