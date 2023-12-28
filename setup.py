@@ -14,13 +14,14 @@ setup(
     long_description_content_type='text/markdown',
     author='Apple Inc.',
     install_requires=[
-        "coremltools>=8.0",
-        "diffusers[torch]==0.30.2",
+        "coremltools>=7.0b2",
+        "python<3.12", # python imp is deprecated and removed in 3.12
+        "diffusers[torch]",
         "torch",
         "transformers==4.44.2",
         "huggingface-hub==0.24.6",
         "scipy",
-        "numpy<1.24",
+        "numpy",
         "pytest",
         "scikit-learn",
         "invisible-watermark",
